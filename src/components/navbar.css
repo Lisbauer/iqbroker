@@ -1,0 +1,102 @@
+.header_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 1%;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 100;
+    max-width: 100%;  font-family: 'Montserrat', sans-serif;
+}
+.header_container::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.22,.42);
+    backdrop-filter: blur(10px);
+    z-index: -1;
+}
+.logo{
+    width: 150px;
+    height: auto;
+}
+#check {
+    display: none;
+}
+.menu_container a{
+    font-size: 1.15rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    text-transform: uppercase;
+    transition: .4s;
+}
+.menu_container a:hover{
+    color: rgba(255, 255, 255, 0.386);
+    transition: .4s;
+}
+/* responsive button */
+.navbar_icons {
+    font-size: 2.8rem;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 2%;
+}
+
+@media (max-width: 992px) {
+    .header_container{
+        padding:  0%;
+    }
+}
+@media (max-width: 768px) {
+    .navbar_icons{
+        display: inline-flex;
+    }
+    #check:checked~.navbar_icons #menu-icon{
+        display: none;
+    }
+    .navbar_icons #close-icon{
+        display: none;
+    }
+    #check:checked~.navbar_icons #close-icon{
+        display: block;
+    }
+    .menu_container{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background: rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.menu_container{
+        height: 17.7rem;
+    }
+    .menu_container a{
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: .3s ease;
+    }
+    #check:checked~.menu_container a{
+        transform: translateY(0);
+        opacity: 1;
+        transition-delay: calc(.15s * var(--i));
+    }
+}
