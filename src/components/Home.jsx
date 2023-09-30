@@ -1,10 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './home.css'
 
 const Home = () => {
+  const [hoveredBox, setHoveredBox] = useState(null);
+
+  const handleMouseOver = (index) => {
+    setHoveredBox(index);
+  }
+
+  const handleMouseOut = () => {
+    setHoveredBox(null);
+  }
+
+  const boxes = [
+    {
+      title: 'SUMATE A IQ',
+      text: 'Administramos, potenciamos tu cartera y generamos nuevas oportunidades a traves de la tecnologia, capacitacion y eficiencia.'
+    },
+    {
+      title: 'EXCELENCIA EN LO QUE HACEMOS',
+      text: 'Brindamos soluciones seguras e inteligentes a nuestros clientes generando relaciones de calidad a largo plazo'
+    },
+    {
+      title: '+ 40 AÑOS DE EXPERIENCIA',
+      text: 'en el mercado asegurador'
+    }
+  ];
+
   return (
-    <div className='home_container'></div>
-  )
+    <div className='home_container'>
+      {boxes.map((box, index) => (
+        <div
+          key={index}
+          className={`home_box ${hoveredBox === index ? 'hovered' : ''}`}
+          onMouseOver={() => handleMouseOver(index)}
+          onMouseOut={handleMouseOut}
+        >
+          <h2>{box.title}</h2>
+          <p>{box.text}</p>
+        </div>
+      ))}
+    </div>
+  );
 }
 
-export default Home
+export default Home; 

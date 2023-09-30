@@ -123,26 +123,26 @@ const Contact = () => {
             >
               Mensaje enviado.
             </p>
-          )}
-        </div>
-      </div>
-      <section className="contact_footer">
+          )}      <section className="contact_footer">
         <div>
           <img src="./images/location.png" alt="location image" />
           <h3>Direccion</h3>
-          <h4>401 Broadway, 24th Floor <br /> New York, NY 10013.</h4>
+          <h4 className="contact_subtittle">401 Broadway, 24th Floor <br /> New York, NY 10013.</h4>
         </div>
         <div>
           <img src="./images/celphone.png" alt="celphone image" />
           <h3>Telefono</h3>
-          <h4>1-800-222-000</h4>
+          <h4 className="contact_subtittle">1-800-222-000</h4>
         </div>
         <div>
           <img src="./images/email.png" alt="email image" />
           <h3>E-MAIL</h3>
-          <h4>info@iqbrokers.com.ar</h4>
+          <h4 className="contact_subtittle">info@iqbrokers.com.ar</h4>
         </div>
       </section>
+        </div>
+      </div>
+
     </div>
   );
 };

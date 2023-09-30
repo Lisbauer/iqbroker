@@ -5,7 +5,7 @@
   padding: 0;
 }
 .navbar_home{
-  background-image: url(./../public/images/background.jpg); 
+  background-image: url(./../public/images/homebg.png); 
   background-size: cover;
   background-position: center;
 }

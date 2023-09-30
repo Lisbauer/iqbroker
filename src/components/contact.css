@@ -1,6 +1,6 @@
 .contact_section{
     height: 110vh;
-    background-image: url(../../public/images/bgcontact2.jpg); 
+    background-image: url(../../public/images/bgcontact3.png); 
     background-size: cover;
     align-items: center;
     justify-content: center;
@@ -8,16 +8,15 @@
     flex-direction: column;
 }
 .form_container{
-    background: #ffffff6a;
+    background: #00617230;
     backdrop-filter: blur(5px);
-    width: 800px;
-    height: 650px;
+    width: 40%;
+    height: 56em;
     border-radius: 7px;
-    box-shadow: 5px 5px 2px 1px rgba(52, 51, 49, 0.123);
 }
 .form_container h2{
     padding-top: 55px;
-    color: rgb(105, 79, 1);
+    color: #ffffff;
     font-size: 35px;
 }
 .textfields_container{
@@ -28,7 +27,7 @@
     gap: 20px;
 }
 .textfields_container input{
-    width: 500px;
+    width: 70%;
     height: 50px;
     border-radius: 7px;
     border: transparent;
@@ -39,12 +38,13 @@
 }
 #input_submit{
     width: 200px;
-    background: rgb(0, 27, 90);
+    background: #006072;
     color: rgb(255, 255, 255);
     transition: ease-in-out 0.4s;
+    cursor: pointer;
 }
 #input_submit:hover{
-    background: rgb(36, 32, 7);
+    background: #002f38;
     color: rgb(253, 253, 253);
 }
 
@@ -52,7 +52,47 @@
     margin-top: 50px;
     display: flex;
     gap: 60px;
+    color: white;
 }
 .contact_footer img{
-    width: 100px;
+    width: 5em;
+}
+.contact_subtittle{
+    height: auto;
+}
+@media (max-width: 992px) {
+    .form_container{
+        width: 70%;
+        height: 56em;
+    }
+    .contact_subtittle{
+        font-size: 14px;
+    }
+}
+@media (max-width: 600px) {
+    .contact_section{
+        height: 160vh;
+    }
+    .contact_section h2{
+        font-size: 1.6em;
+    }
+    .contact_footer{
+        flex-direction: column;
+        gap: 0;
+    }
+    .form_container{
+        height: 76em;
+    }
+}
+@media (max-width: 400px) {
+    .textfields_container input{
+        font-size: 14px;
+        height: 35px;
+    }
+    .contact_section h2{
+        font-size: 1.3em;
+    }
+    .form_container{
+        height: 72em;
+    }
 }
