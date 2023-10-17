@@ -5,7 +5,7 @@ const Nosotros = () => {
   return (
     <div className='nosotros_container'>
         <div className='img_text_box'>
-            <img src="./images/logoazul.png" alt="" />
+            <img src="./images/logoazul.png" alt="logo" data-aos="flip-down" />
             <p>IQ es un bróker con más de <span style={{fontWeight: "900"}}>40 años</span> de experiencia en el mercado asegurador, administrando más de <span style={{fontWeight: "900"}}>30.000 riesgos</span> , con presencia en las provincias de Mendoza, San Juan, San Luis, Neuquén y Rio Negro.</p>
         </div>
         <section className='parrafo_container'>

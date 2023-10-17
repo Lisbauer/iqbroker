@@ -1,0 +1,8 @@
+.clients_container{
+    height: 100vh;
+    background-image: url(../../public/images/handshake.jpg); 
+    background-size: cover;
+}
+.client_img{
+    width: 100px;
+}

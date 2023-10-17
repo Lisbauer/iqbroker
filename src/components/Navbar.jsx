@@ -19,11 +19,11 @@ const Navbar = () => {
 
   return (
     <div className='header_container'>
-        <img className='logo' src="./images/logo2.png" alt="logo iqbroker" />
+       <a href=""><img className='logo' src="./images/logo2.png" alt="logo iqbroker" /></a>
         <input type="checkbox" id='check'/>
         <label htmlFor="check" className='navbar_icons'>
-        <box-icon name='menu' id='menu-icon'></box-icon>
-        <box-icon name='x' id='close-icon'></box-icon>
+        <box-icon name='menu' color='white' size='40px' id='menu-icon'></box-icon>
+        <box-icon name='x' color='white' size='40px' id='close-icon'></box-icon>
         </label>
         <div className='menu_container'>
             <a href="#" style={{"--i": 0 }}>

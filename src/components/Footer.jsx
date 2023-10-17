@@ -12,26 +12,20 @@ const Footer = () => {
           asegurador, con presencia en las provincias de Mendoza, San Juan, San
           Luis y Neuquén.
         </p>
-        <img src="./images/logo.png" alt="logo" />
+       <a href="" target="blank"> <img src="./images/logo.png" alt="logo"/></a>
         <div className="icons_box">
+          
           <a
-            href="https://www.facebook.com/magna.dimenseon"
-            target="_blank"
-            alt="facebook-icon"
-          >
-            <FontAwesomeIcon className="fonticonf" icon={faFacebook} />
-          </a>
-          <a
-            href="https://www.instagram.com/magna.dimenseon/"
+            href=""
             target="_blank"
             alt="facebook-icon"
           >
             <FontAwesomeIcon className="fonticoni" icon={faInstagram} />
           </a>
           <a
-            href="https://www.linkedin.com/company/magna-dimenseon/"
+            href="https://www.linkedin.com/company/iq-broker/"
             target="_blank"
-            alt="facebook-icon"
+            alt="linkedin-icon"
           >
             <FontAwesomeIcon className="fonticoni" icon={faLinkedin} />
           </a>

@@ -7,6 +7,7 @@ import Nosotros from './components/Nosotros';
 import Clients from './components/Clients';
 import Footer from './components/Footer';
 import ToTop from './components/ToTop';
+import Partners from './components/Partners';
 
 function App() {
   return (
@@ -23,8 +24,11 @@ function App() {
       <div id="aboutus">
       <Nosotros/>
       </div>
-      <div id="clients">
+      {/*<div id="clients">
       <Clients/>  
+  </div>*/}
+      <div>
+      <Partners/>  
       </div>
       <div id="contact">
       <Contact/>  

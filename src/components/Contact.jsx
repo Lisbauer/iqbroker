@@ -28,10 +28,10 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_3h77yj4", // Reemplaza con tu SERVICE ID
-        "template_7qfvucu", // Reemplaza con tu TEMPLATE ID
+        "service_vpkx5yq", // Reemplaza con tu SERVICE ID
+        "template_0n6s87j", // Reemplaza con tu TEMPLATE ID
         emailParams,
-        "c-8emIEBk9zCo1zHo" // Reemplaza con tu USER ID (PUBLIC KEY)
+        "RKirZCWg-9Ylts7fn" // Reemplaza con tu USER ID (PUBLIC KEY)
       )
       .then(
         (response) => {
@@ -55,7 +55,7 @@ const Contact = () => {
 
   return (
     <div className="contact_section">
-      <div className="form_container">
+      <div className="form_container" data-aos="fade-down">
         <h2>CONTACTANOS</h2>
         <div className="textfields_container">
           <input
@@ -125,7 +125,7 @@ const Contact = () => {
             </p>
           )}      <section className="contact_footer">
         <div>
-          <img src="./images/location.png" alt="location image" />
+         <a href="https://www.google.com/maps/place/401+W+Broadway,+New+York,+NY+10012,+EE.+UU./@40.7243764,-74.0044765,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2598c159af05f:0x33a0750bb4a0d4d5!8m2!3d40.7243724!4d-74.0019016!16s%2Fg%2F11c1h6_b4w?entry=ttu" target="_blank"><img src="./images/location.png" alt="location image" /></a>
           <h3>Direccion</h3>
           <h4 className="contact_subtittle">401 Broadway, 24th Floor <br /> New York, NY 10013.</h4>
         </div>
@@ -135,7 +135,7 @@ const Contact = () => {
           <h4 className="contact_subtittle">1-800-222-000</h4>
         </div>
         <div>
-          <img src="./images/email.png" alt="email image" />
+          <a href="mailto:info@iqbrokers.com.ar"> <img src="./images/email.png" alt="email image" /></a>
           <h3>E-MAIL</h3>
           <h4 className="contact_subtittle">info@iqbrokers.com.ar</h4>
         </div>

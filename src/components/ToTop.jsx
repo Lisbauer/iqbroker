@@ -16,7 +16,7 @@ const ToTop = () => {
     };
   return (
     <div className='arrow_container'>
-         <a href="" target="_blank" alt="whatsapp icon">
+         <a href="https://walink.co/1878de" target="_blank" alt="whatsapp icon">
             <FontAwesomeIcon className="whatsapp" icon={faWhatsapp} />
           </a>
         <Link to="navbar_home" smooth={true} duration={1500} spy={true} exact="true">
