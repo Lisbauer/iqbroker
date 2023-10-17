@@ -77,14 +77,14 @@
         left: 0;
         width: 100%;
         height: 0;
-        background: #0061721c;
+        background: #00617270;
         backdrop-filter: blur(10px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
         transition: .3s ease;
     }
     #check:checked~.menu_container{
-        height: 17.7rem;
+        height: 14.7rem;
     }
     .menu_container a{
         display: block;
