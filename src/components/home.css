@@ -60,6 +60,7 @@
 @media (max-width: 530px) {
     .home_box{
         margin: 30px;
+        padding: 10px;
     }
     .home_box h2{
         font-size: 1.4em;
