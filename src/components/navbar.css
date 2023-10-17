@@ -77,8 +77,8 @@
         left: 0;
         width: 100%;
         height: 0;
-        background: #00617270;
-        backdrop-filter: blur(10px);
+        background: #00617288;
+        backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         overflow: hidden;
         transition: .3s ease;
