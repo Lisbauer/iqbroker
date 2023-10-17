@@ -9,7 +9,7 @@
 }
 .footer_content_container img{ 
     width: 140px;
-    height: fit-content;
+    height: auto;
 }
 .footer_content_container p{
     color: #868686;
