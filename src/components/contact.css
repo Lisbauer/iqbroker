@@ -94,5 +94,11 @@
     }
     .form_container{
         height: 72em;
+    }    
+    .form_container{
+        height: auto;
+    } 
+    #input_submit{
+        width: 80%;
     }
 }
