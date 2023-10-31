@@ -15,7 +15,7 @@
     transition: all 2.5s;
 }
 .whatsapp{
-    font-size: 37px;
+    font-size: 55px;
     color: #006172;
 }
 .arrow{
@@ -24,7 +24,7 @@
     border: 0.9px solid #00617255;
     border-radius: 50%;
     padding:7px 10px 7px 10px;
-    font-size: 19px;
+    font-size: 31px;
     font-weight: 100;
     transition: 0.4s;
 }

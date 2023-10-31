@@ -24,7 +24,7 @@
     z-index: -1;
 }
 .logo{
-    width: 200px;
+    width: 260px;
     height: auto;
 }
 #check {
@@ -51,6 +51,22 @@
     display: none;
     position: absolute;
     right: 2%;
+}
+.login_btn{
+    width: 100px;
+    background: #006072;
+    color: rgb(255, 255, 255);
+    transition: ease-in-out 0.4s;
+    cursor: pointer;
+    height: 50px;
+    border-radius: 7px;
+    border: transparent;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+.login_btn:hover{
+    background: #002f38;
+    color: rgb(253, 253, 253);
 }
 
 @media (max-width: 992px) {

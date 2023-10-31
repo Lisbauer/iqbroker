@@ -16,7 +16,6 @@ const Partners = () => {
             <img id="img4" src="./images/partner4.jpg" alt="logo partner" />
             <img id="img5" src="./images/partner5.jpg" alt="logo partner" />
             <img id="img6" src="./images/partner6.jpg" alt="logo partner" />
-            <img id="img7" src="./images/partner7.jpg" alt="logo partner" />
           </div>
         </div>
       </div>
