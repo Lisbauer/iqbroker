@@ -1,12 +1,12 @@
 .partners_container{
-    background: #e4e3e3fd;
+    background: #fffffffd;
     height: 30vh;
     padding: 20px 0px 90px 0px;
 }
 .partners_section h2{
     font-size: 2.1em;
     letter-spacing: 15px;
-    color: white;
+    color: #006172c1;
 }
 .partners_logos{
     display: flex;
