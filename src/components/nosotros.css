@@ -25,6 +25,9 @@
     width: 50%;
     font-size: 1em;
 }
+.us_list li{
+    text-align: left;
+}
 @media (max-width: 1100px) {
     .nosotros_container{
         height: auto;

@@ -6,13 +6,22 @@ const Nosotros = () => {
     <div className='nosotros_container'>
         <div className='img_text_box'>
             <img src="./images/logoazul.png" alt="logo" data-aos="flip-down" />
-            <p>IQ es un bróker con más de <span style={{fontWeight: "900"}}>40 años</span> de experiencia en el mercado asegurador, administrando más de <span style={{fontWeight: "900"}}>30.000 riesgos</span> , con presencia en las provincias de Mendoza, San Juan, San Luis, Neuquén y Rio Negro.</p>
+            <p>Más de 40 años asistiendo a Compañías, Organizadores y PAS en la atención y la administración de riesgos complejos. <br /> Resultados sólidos, respuestas rápidas.</p>
         </div>
         <section className='parrafo_container'>
-            <p>Nuestro equipo está conformado por más de  <span style={{fontWeight: "900"}}>120 productores</span>  asesores de seguros (PAS), altamente capacitados y con una enorme vocación de servicio que acompañados por nuestro equipo de back office, integrado por Ejecutivos, Analistas de Riesgos, Abogados especializados, Contadores y Licenciados en Higiene y Seguridad, brindando a nuestros clientes soluciones para cada una de sus necesidades.</p>
-            <p>Estamos abocados a dar un <span style={{fontWeight: "900"}}>servicio de excelencia</span>, para que tanto nuestros Asesores como nuestros clientes puedan sentirse tranquilos y seguros, que estamos cuidando lo mas importante, <span style={{fontWeight: "900"}}>su vida y su patrimonio.</span> </p>
-            <p>En los últimos 40 años nos hemos especializado a armar redes comerciales, armados de productos diferenciados como así también a potenciar a nuestros queridos productores, ya que su éxito es nuestra razón para seguir adelante.</p>
-            <p>Entendemos que la <strong>confianza</strong>, la <strong>eficiencia</strong> y la <strong>respuesta ágil</strong> son pilares fundamentales de nuestra actividad que honramos y seguimos día a día.</p>
+            <p>Poniendo énfasis en la eficacia y la eficiencia, generamos relaciones de calidad a mediano y largo tanto para las compañías como para los productores.</p>
+            <p>Trabajamos siempre bajo la misma premisa: <strong>La Unión hace la fuerza</strong></p>
+            <p>En los últimos 40 años nos hemos especializado a armar <strong>redes comerciales</strong>, armados de productos diferenciados como así también a potenciar a nuestros queridos productores, ya que su éxito es nuestra razón para seguir adelante.</p>
+            <p>Contamos con todas las herramientas digitales para potenciar tu negocio:</p>
+              <ul className='us_list'>
+                <li>Cotizador</li>
+                <li>Gestión de cartera y alertas automáticas</li>
+                <li>Emisor web</li>
+              </ul>
+            
+            <p>Desde desarrollos comerciales hasta la atención de asegurados y terceros. 
+Somos tu aliado estratégico. <strong>Somos IQ Broker</strong>.
+</p>
         </section>
     </div>
   )
