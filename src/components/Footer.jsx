@@ -16,13 +16,6 @@ const Footer = () => {
         <div className="icons_box">
           
           <a
-            href=""
-            target="_blank"
-            alt="facebook-icon"
-          >
-            <FontAwesomeIcon className="fonticoni" icon={faInstagram} />
-          </a>
-          <a
             href="https://www.linkedin.com/company/iq-broker/"
             target="_blank"
             alt="linkedin-icon"
@@ -34,6 +27,7 @@ const Footer = () => {
       <hr/>
       <div className="rights_box">
         <h5>IQ Broker</h5>
+       <a style={{textDecoration:"none", color:"#868686"}} href="https://lisabauer-portfolio.vercel.app/" target="blank"><h5>Página web creada por Lisa Bauer</h5></a>
         <h5>2023 - Todos los derechos reservados</h5>
       </div>
     </div>

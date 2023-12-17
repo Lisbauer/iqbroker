@@ -79,7 +79,7 @@ const Navbar = () => {
           >
             Contacto
           </Link>
-        </a>      <a href="app.iqbroker.com.ar:81" target="blank">
+        </a>      <a href="http://app.iqbroker.com.ar:81" target="blank">
         <input className="login_btn" type="submit" value="Log in" />
       </a>
       </div>

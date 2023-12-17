@@ -16,9 +16,12 @@
 }
 .img_text_box p{
     font-size: 1.7em;
-    width: 50%;
+    width: 60%;
     font-weight: 300;
     color: grey;
+}
+.secondary_p{
+    letter-spacing: 3px;
 }
 .parrafo_container{
     margin-top: 70px;

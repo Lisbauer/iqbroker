@@ -127,7 +127,7 @@ const Contact = () => {
         <div>
          <a href="https://www.google.com/maps/place/401+W+Broadway,+New+York,+NY+10012,+EE.+UU./@40.7243764,-74.0044765,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2598c159af05f:0x33a0750bb4a0d4d5!8m2!3d40.7243724!4d-74.0019016!16s%2Fg%2F11c1h6_b4w?entry=ttu" target="_blank"><img src="./images/location.png" alt="location image" /></a>
           <h3>Direccion</h3>
-          <h4 className="contact_subtittle">401 Broadway, 24th Floor <br /> New York, NY 10013.</h4>
+          <h4 className="contact_subtittle">Alberdi 1112, Guaymallén<br />Mendoza</h4>
         </div>
         <div>
           <img src="./images/celphone.png" alt="celphone image" />
@@ -137,7 +137,7 @@ const Contact = () => {
         <div>
           <a href="mailto:info@iqbrokers.com.ar"> <img src="./images/email.png" alt="email image" /></a>
           <h3>E-MAIL</h3>
-          <h4 className="contact_subtittle">info@iqbrokers.com.ar</h4>
+          <h4 className="contact_subtittle">administracion@iqbroker.com.ar</h4>
         </div>
       </section>
         </div>

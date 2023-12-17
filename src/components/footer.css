@@ -8,19 +8,19 @@
     padding: 60px;
 }
 .footer_content_container img{ 
-    width: 140px;
+    width: 170px;
     height: auto;
 }
 .footer_content_container p{
     color: #868686;
     width: 330px;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 20px;
 }
 .icons_box{
     display: flex;
     gap: 13px;
-    font-size: 18px;
+    font-size: 21px;
     padding-top: 20px;
 }
 .icons_box a{

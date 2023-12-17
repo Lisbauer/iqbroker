@@ -20,6 +20,7 @@
     text-align: center;
     flex-direction: column;
     border: solid 1px rgba(255, 255, 255, 0.363);
+    padding: 0px 20px 0px 20px;
 }
 .home_box h2{
     font-size: 2rem;
