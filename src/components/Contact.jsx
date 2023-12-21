@@ -9,11 +9,12 @@ const Contact = () => {
   const [mensaje, setMensaje] = useState("");
   const [error, setError] = useState(false);
   const [enviado, setEnviado] = useState(false);
+  const [cliente, setCliente] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!nombre || !numero || !email || !mensaje) {
+    if (!nombre || !numero || !email || !mensaje || !cliente ) {
       setError(true);
       setEnviado(false);
       return;
@@ -22,6 +23,7 @@ const Contact = () => {
     const emailParams = {
       from_name: nombre,
       phone_number: numero,
+      client: cliente,
       email: email,
       message: mensaje,
     };
@@ -88,6 +90,24 @@ const Contact = () => {
               border: error && !numero ? "red 1px solid" : "transparent",
             }}
           />
+          <select className="select_client"
+            name="cliente"
+            value={cliente}
+            onChange={(e) => setCliente(e.target.value)}
+            style={{
+              border: error && !cliente ? "red 1px solid" : "transparent",
+            }}
+          >
+            <option value="" disabled hidden>
+              Clientes
+            </option>
+            <option value="Experta Seguros">Experta Seguros</option>
+            <option value="SMG Seguros">SMG Seguros</option>
+            <option value="Providencia Seguros">Providencia Seguros</option>
+            <option value="HDI Seguros">HDI Seguros</option>
+            <option value="Mercantil Andina">Mercantil Andina</option>
+            <option value="ATM Seguros">ATM Seguros</option>
+          </select>
           <input
             type="text"
             id="input_message"
