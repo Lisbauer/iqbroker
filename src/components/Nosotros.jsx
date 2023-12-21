@@ -7,7 +7,7 @@ const Nosotros = () => {
         <div className='img_text_box'>
             <img src="./images/logoazul.png" alt="logo" data-aos="flip-down" />
             <p>Más de 40 años asistiendo a Compañías, Organizadores y PAS en la atención y la administración de riesgos complejos.</p>
-            <p className='secondary_p'>Resultados sólidos + Respuestas rápidas</p>
+            <p className='secondary_p'>Respuestas rápidas -> Resultados positivos</p>
         </div>
         <section className='parrafo_container'>
             <p>Poniendo énfasis en la eficacia y la eficiencia, generamos relaciones de calidad a mediano y largo tanto para las compañías como para los productores.</p>

@@ -21,10 +21,6 @@ const Home = () => {
       title: 'EXCELENCIA EN LO QUE HACEMOS',
       text: 'Brindamos soluciones seguras e inteligentes a nuestros clientes generando relaciones de calidad a largo plazo'
     },
-    {
-      title: '+ 40 AÑOS DE EXPERIENCIA',
-      text: 'en el mercado asegurador'
-    }
   ];
 
   return (
@@ -40,6 +36,7 @@ const Home = () => {
           <p>{box.text}</p>
         </div>
       ))}
+      <div className="home_box2"><h2>+40 AÑOS DE EXPERIENCIA EN EL MERCADO ASEGURADOR</h2></div>
     </div>
   );
 }

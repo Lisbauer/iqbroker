@@ -9,16 +9,24 @@ const Contact = () => {
   const [mensaje, setMensaje] = useState("");
   const [error, setError] = useState(false);
   const [enviado, setEnviado] = useState(false);
-  const [cliente, setCliente] = useState("");
+  const [clienteCheckbox, setClienteCheckbox] = useState(""); // Cambiado el nombre del estado
+  const [clienteSelect, setClienteSelect] = useState(""); // Nuevo estado para el campo de selección
+  const [checkboxError, setCheckboxError] = useState(false);
+
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    if (!nombre || !numero || !email || !mensaje || !cliente ) {
+    if (!nombre || !numero || !email || !mensaje || (!clienteCheckbox && !clienteSelect))  {
       setError(true);
       setEnviado(false);
+      setCheckboxError(true);
       return;
     }
+
+    setCheckboxError(false);
+
+    const cliente = clienteCheckbox || clienteSelect;
 
     const emailParams = {
       from_name: nombre,
@@ -26,6 +34,7 @@ const Contact = () => {
       client: cliente,
       email: email,
       message: mensaje,
+      checkbox_option: clienteCheckbox,
     };
 
     emailjs
@@ -90,16 +99,46 @@ const Contact = () => {
               border: error && !numero ? "red 1px solid" : "transparent",
             }}
           />
-          <select className="select_client"
+
+
+          <div className="checkbox_inputs">
+            <div className="box_checkbox_input">
+            <input
+                type="checkbox"
+                name="seguroOption"
+                value="Quiero un seguro para mí"
+                checked={clienteCheckbox === "Quiero un seguro para mí"}
+                onChange={() => setClienteCheckbox("Quiero un seguro para mí")}
+                className={checkboxError ? "error-checkbox" : ""}
+              />
+                <p>Quiero un seguro para mí</p>
+            </div>
+            <div className="box_checkbox_input">
+            <input
+                type="checkbox"
+                name="seguroOption"
+                value="Soy Productor/a de seguros"
+                checked={clienteCheckbox === "Soy Productor/a de seguros"}
+                onChange={() => setClienteCheckbox("Soy Productor/a de seguros")}
+                className={checkboxError ? "error-checkbox" : ""}
+              />
+                <p>Soy productor/a de seguros</p>
+            </div>
+          </div>
+
+
+
+          <select
+            className="select_client"
             name="cliente"
-            value={cliente}
-            onChange={(e) => setCliente(e.target.value)}
+            value={clienteSelect}
+            onChange={(e) => setClienteSelect(e.target.value)}
             style={{
-              border: error && !cliente ? "red 1px solid" : "transparent",
+              border: error && !clienteCheckbox && !clienteSelect ? "red 1px solid" : "transparent",
             }}
           >
             <option value="" disabled hidden>
-            Compañía de interés
+              Compañía de interés
             </option>
             <option value="Todas">Todas</option>
             <option value="Experta Seguros">Experta Seguros</option>
@@ -108,7 +147,9 @@ const Contact = () => {
             <option value="HDI Seguros">HDI Seguros</option>
             <option value="Mercantil Andina">Mercantil Andina</option>
             <option value="ATM Seguros">ATM Seguros</option>
-            <option value="Según la oferta comercial">Según la oferta comercial</option>
+            <option value="Según la oferta comercial">
+              Según la oferta comercial
+            </option>
           </select>
           <input
             type="text"
@@ -145,26 +186,40 @@ const Contact = () => {
             >
               Mensaje enviado.
             </p>
-          )}      <section className="contact_footer">
-        <div>
-         <a href="https://www.google.com/maps/place/401+W+Broadway,+New+York,+NY+10012,+EE.+UU./@40.7243764,-74.0044765,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2598c159af05f:0x33a0750bb4a0d4d5!8m2!3d40.7243724!4d-74.0019016!16s%2Fg%2F11c1h6_b4w?entry=ttu" target="_blank"><img src="./images/location.png" alt="location image" /></a>
-          <h3>Direccion</h3>
-          <h4 className="contact_subtittle">Alberdi 1112, Guaymallén<br />Mendoza</h4>
-        </div>
-        <div>
-          <img src="./images/celphone.png" alt="celphone image" />
-          <h3>Telefono</h3>
-          <h4 className="contact_subtittle">1-800-222-000</h4>
-        </div>
-        <div>
-          <a href="mailto:info@iqbrokers.com.ar"> <img src="./images/email.png" alt="email image" /></a>
-          <h3>E-MAIL</h3>
-          <h4 className="contact_subtittle">administracion@iqbroker.com.ar</h4>
-        </div>
-      </section>
+          )}{" "}
+          <section className="contact_footer">
+            <div>
+              <a
+                href="https://www.google.com/maps/place/401+W+Broadway,+New+York,+NY+10012,+EE.+UU./@40.7243764,-74.0044765,17z/data=!3m1!4b1!4m6!3m5!1s0x89c2598c159af05f:0x33a0750bb4a0d4d5!8m2!3d40.7243724!4d-74.0019016!16s%2Fg%2F11c1h6_b4w?entry=ttu"
+                target="_blank"
+              >
+                <img src="./images/location.png" alt="location image" />
+              </a>
+              <h3>Direccion</h3>
+              <h4 className="contact_subtittle">
+                Alberdi 1112, Guaymallén
+                <br />
+                Mendoza
+              </h4>
+            </div>
+            <div>
+              <img src="./images/celphone.png" alt="celphone image" />
+              <h3>Telefono</h3>
+              <h4 className="contact_subtittle">1-800-222-000</h4>
+            </div>
+            <div>
+              <a href="mailto:info@iqbrokers.com.ar">
+                {" "}
+                <img src="./images/email.png" alt="email image" />
+              </a>
+              <h3>E-MAIL</h3>
+              <h4 className="contact_subtittle">
+                administracion@iqbroker.com.ar
+              </h4>
+            </div>
+          </section>
         </div>
       </div>
-
     </div>
   );
 };

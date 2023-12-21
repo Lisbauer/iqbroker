@@ -1,5 +1,5 @@
 .contact_section{
-    height: 110vh;
+    height: 120vh;
     background-image: url(../../public/images/bgcontact3.png); 
     background-size: cover;
     align-items: center;
@@ -11,7 +11,7 @@
     background: #00617230;
     backdrop-filter: blur(5px);
     width: 40%;
-    height: 56em;
+    height: 65em;
     border-radius: 7px;
 }
 .form_container h2{
@@ -67,10 +67,25 @@
     border: transparent;
     font-size: 16px;
 }
-@media (max-width: 992px) {
+.checkbox_inputs{
+    display: flex;
+    gap: 50px;
+    margin: 0;
+}
+.checkbox_inputs input[type=checkbox]{
+    width: 24px;
+    cursor: pointer;
+}
+.box_checkbox_input p{
+    margin: 0;
+}
+.error-checkbox {
+    border: 1px solid red;
+  }
+@media (max-width: 1300px) {
     .form_container{
         width: 70%;
-        height: 56em;
+
     }
     .contact_subtittle{
         font-size: 14px;
@@ -88,7 +103,13 @@
         gap: 0;
     }
     .form_container{
-        height: 76em;
+        height: 85em;
+    }
+    .checkbox_inputs{
+        gap: 10px;
+    }
+    .box_checkbox_input p{
+        font-size: 14px;
     }
 }
 @media (max-width: 400px) {
@@ -100,9 +121,15 @@
         font-size: 1.3em;
     }
     .form_container{
-        height: 76em;
+        height: 82em;
     }    
     #input_submit{
         width: 80%;
+    }
+    .box_checkbox_input p{
+        font-size: 11px;
+    }
+    .contact_subtittle{
+        font-size: 12px;
     }
 }
