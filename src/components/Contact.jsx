@@ -99,14 +99,16 @@ const Contact = () => {
             }}
           >
             <option value="" disabled hidden>
-              Clientes
+            Compañía de interés
             </option>
+            <option value="Todas">Todas</option>
             <option value="Experta Seguros">Experta Seguros</option>
             <option value="SMG Seguros">SMG Seguros</option>
             <option value="Providencia Seguros">Providencia Seguros</option>
             <option value="HDI Seguros">HDI Seguros</option>
             <option value="Mercantil Andina">Mercantil Andina</option>
             <option value="ATM Seguros">ATM Seguros</option>
+            <option value="Según la oferta comercial">Según la oferta comercial</option>
           </select>
           <input
             type="text"
